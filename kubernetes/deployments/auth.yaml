@@ -4,6 +4,10 @@ metadata:
   name: auth
 spec:
   replicas: 1
+  selector:
+    matchLabels:      
+      app: auth
+      track: stable
   template:
     metadata:
       labels:
